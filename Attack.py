@@ -47,7 +47,6 @@ def project_space_time(data_freq):
     return OriginData
 
 
-# 固定采样每帧的节点
 Vs = [0, 1, 2, 3,
       7, 11, 15, 19,
       9, 13, 17, 21]
