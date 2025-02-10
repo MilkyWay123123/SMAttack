@@ -22,8 +22,8 @@ def weights_init(model):
 
 
 def loadSTGCN():
-    load_path = '/23085412008/模型权重/STGCN/ntu60/ntu-xsub.pt'
-    print(f'加载STGCN模型:{load_path}')
+    load_path = './ModelWeights/STGCN/ntu60/ntu-xsub.pt'
+    print(f'load STGCN:{load_path}')
     graph_args = {
         "layout": "ntu-rgb+d",
         "strategy": "spatial"
@@ -39,8 +39,8 @@ def loadSTGCN():
 
 
 def loadMSG3D():
-    load_path = '/23085412008/模型权重/MSG3D/ntu60-xsub-joint-better.pt'
-    print(f'加载MSG3D模型:{load_path}')
+    load_path = './ModelWeights/MSG3D/ntu60-xsub-joint-better.pt'
+    print(f'load MSG3D:{load_path}')
     mcg3d = MCG3D_Model(
         num_class=60,
         num_point=25,
@@ -57,8 +57,8 @@ def loadMSG3D():
     return mcg3d
 
 def loadAGCN():
-    load_path = '/23085412008/模型权重/AGCN/ntu60/ntu_cs_agcn_joint-49-31500.pt'
-    print(f'加载agcn模型:{load_path}')
+    load_path = './ModelWeights/AGCN/ntu60/ntu_cs_agcn_joint-49-31500.pt'
+    print(f'load agcn:{load_path}')
     agcn = AGCN_Model(
         num_class=60,
         num_point=25,
@@ -81,5 +81,5 @@ def getModel(AttackedModel):
         model = loadSTGCN()
     model.eval()
     total_params = sum(p.numel() for p in model.parameters() if p.requires_grad) / 1e6
-    print(f"模型总参数数量：{total_params:.2f} M")
+    print(f"Total number of model parameters：{total_params:.2f} M")
     return model
