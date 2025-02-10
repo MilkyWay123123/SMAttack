@@ -197,7 +197,6 @@ def attack(args):
                 break
 
         if len(SourceSample) != 0:
-            # 保存
             np.save(f'{args.save_path}/SourceSample.npy', np.stack(SourceSample))
             np.save(f'{args.save_path}/AttackSample.npy', np.stack(AttackSample))
             np.save(f'{args.save_path}/LabelSample.npy', np.stack(LabelSample))
