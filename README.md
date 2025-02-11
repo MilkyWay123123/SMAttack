@@ -11,7 +11,7 @@ To further refine the motion consistency, we introduce a pose smoothing mechanis
 Extensive experiments on benchmark datasets demonstrate that SMAttack significantly outperforms conventional non-manifold attacks in both transferability and undefendabality. 
 
 # Prerequisites
-> Python >= 3.9
+> Python >= 3.9  
   torch >= 2.3.0
 
 # Data Preparation
