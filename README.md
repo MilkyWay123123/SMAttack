@@ -10,5 +10,7 @@ This enables the generation of adversarial samples that better align with the na
 To further refine the motion consistency, we introduce a \textit{pose smoothing mechanism} that reduces abrupt distortions and enhances the realism of adversarial sequences.
 Extensive experiments on benchmark datasets demonstrate that SMAttack significantly outperforms conventional non-manifold attacks in both transferability and undefendabality. 
 
-> python3.9 Attack.py --config ./config/stgcn-ntu60-cs.yaml
+```python
+python3.9 Attack.py --config ./config/stgcn-ntu60-cs.yaml
+```
 
