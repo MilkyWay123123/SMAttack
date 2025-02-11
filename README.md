@@ -10,6 +10,18 @@ This enables the generation of adversarial samples that better align with the na
 To further refine the motion consistency, we introduce a pose smoothing mechanism that reduces abrupt distortions and enhances the realism of adversarial sequences.
 Extensive experiments on benchmark datasets demonstrate that SMAttack significantly outperforms conventional non-manifold attacks in both transferability and undefendabality. 
 
+# Prerequisites
+> Python >= 3.9
+  torch >= 2.3.0
+
+# Data Preparation
+## NTU RGB+D 60 and 120
+> Request dataset here: https://rose1.ntu.edu.sg/dataset/actionRecognition
+Download the skeleton-only datasets:
+nturgbd_skeletons_s001_to_s017.zip (NTU RGB+D 60)
+nturgbd_skeletons_s018_to_s032.zip (NTU RGB+D 120)
+
+# Training
 ```python
 python Attack.py --config ./config/stgcn-ntu60-cs.yaml
 ```
