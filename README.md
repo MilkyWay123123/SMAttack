@@ -11,6 +11,6 @@ To further refine the motion consistency, we introduce a \textit{pose smoothing 
 Extensive experiments on benchmark datasets demonstrate that SMAttack significantly outperforms conventional non-manifold attacks in both transferability and undefendabality. 
 
 ```python
-python3.9 Attack.py --config ./config/stgcn-ntu60-cs.yaml
+python Attack.py --config ./config/stgcn-ntu60-cs.yaml
 ```
 
