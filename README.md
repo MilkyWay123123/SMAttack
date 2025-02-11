@@ -1,5 +1,5 @@
 # SMAttack
-- Skeleton-based action recognition has made remarkable strides in applications such as intelligent surveillance, sports analysis, and rehabilitation assessment. 
+> Skeleton-based action recognition has made remarkable strides in applications such as intelligent surveillance, sports analysis, and rehabilitation assessment. 
 However, deep learning models in this field are highly vulnerable to adversarial attacks, which leads to severe security risks, including system failures and misclassification of critical actions. 
 Existing attack methods primarily rely on non-manifold perturbations that enforce strict surface-level similarity between adversarial and original samples. 
 These approaches overlook the natural variations in human motion, making them easier to detect and limiting their transferability. 
